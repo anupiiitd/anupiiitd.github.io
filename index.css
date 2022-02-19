@@ -1,0 +1,65 @@
+.navbar { background-color: grey;
+    border-radius: 10px;
+
+    }
+.navbar{
+    overflow:auto;
+}
+.navbar li{
+    float:left;
+    list-style:none;
+    margin: 13px 20px;
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: black;
+}
+.search {
+    float: right;
+    color:white;
+    padding: 12px 75px;
+}
+.navbar li a:hover{
+    color: deepskyblue;
+}
+.navbar input{
+    border: 4px solid dimgray;
+    border-radius: 15px;
+    padding: 3px 17px;
+    width: 129px;
+
+}
+.symbol{
+    padding: 2px;
+    margin:auto;
+    width: 25%;
+    font-style: oblique;
+    color: antiquewhite;
+}
+.bod{
+    background-color:lightslategrey;
+}
+img{
+    margin: auto;
+    width: 90%;
+}
+.new{
+    background-color: chocolate;
+    border-radius: 20px;
+    font-style: italic;
+    text-align: center;
+    
+}
+.lst{
+    background-color:darkolivegreen;
+    font-style: normal;
+    text-decoration: solid;
+    text-align:center;
+}
+.last{
+    text-align: left;
+    background-color: lightcoral;
+    font-style: inherit;
+    font-weight: 600;
+}
