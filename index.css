@@ -1,65 +1,193 @@
-.navbar { background-color: grey;
-    border-radius: 10px;
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins',sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    background-color:#333;
+    flex-direction: column;
+}
+header{
+    position:relative;
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.name{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+    color:darkseagreen;
+}
+
+header .navbar { background-color:darkcyan;
 
     }
-.navbar{
+header .navbar{
+    padding: 10px;
+    width: 100%;
     overflow:auto;
 }
-.navbar li{
-    float:left;
-    list-style:none;
-    margin: 13px 20px;
+header .navbar li{
+    float:right;
+    font-size:1.3em;
+    list-style: none;
+    margin: 20px 20px;
 }
-.navbar li a{
+header .navbar li a{
     padding: 3px 3px;
     text-decoration: none;
     color: black;
 }
-.search {
-    float: right;
+.navbar .logo {
+    float: left;
+    font-size: 35px;
+    font-weight: 600;
     color:white;
     padding: 12px 75px;
 }
-.navbar li a:hover{
+.navbar .logo span {
+    
+    color:black;
+   
+}
+header .navbar li a:hover{
     color: deepskyblue;
 }
-.navbar input{
-    border: 4px solid dimgray;
-    border-radius: 15px;
-    padding: 3px 17px;
-    width: 129px;
+
+.symbol{
+    box-sizing: border-box;
+    position:relative; 
+    right:300px; top:200px;
+    color:#fff;
+}
+.typewriter h3 {
+    
+    overflow: hidden; 
+    border-right: .15em solid darkseagreen; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:darkseagreen; }
+  }
+
+
+footer{
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+footer .social_icon{
+    position: realtive;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
 
 }
-.symbol{
-    padding: 2px;
-    margin:auto;
-    width: 25%;
-    font-style: oblique;
-    color: antiquewhite;
+footer .social_icon li{
+    list-style: none;
 }
-.bod{
-    background-color:lightslategrey;
+footer .social_icon li a{
+    font-size: 2em;
+    color: #fff;
+    margin:0 10px;
+    display: inline-block;
+    transition: 0.5s;
 }
-img{
-    margin: auto;
-    width: 90%;
+footer .social_icon li a:hover{
+    transform:translateY(-10px)
 }
-.new{
-    background-color: chocolate;
-    border-radius: 20px;
-    font-style: italic;
+footer p{
+    color:#fff;
     text-align: center;
-    
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+
 }
-.lst{
-    background-color:darkolivegreen;
-    font-style: normal;
-    text-decoration: solid;
-    text-align:center;
+footer .wave{
+    position: absolute;
+    top:-80px;
+    left:0;
+    width:100%;
+    height: 100px;
+    background:url(wave.png);
+    background-size: 1000px 100px;
+
 }
-.last{
-    text-align: left;
-    background-color: lightcoral;
-    font-style: inherit;
-    font-weight: 600;
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave{
+    0%
+    {
+        background-position-x:1000px;
+    }
+    100%
+    {
+        background-position-x:0px;
+    }
+}
+@keyframes animateWave_02{
+    0%
+    {
+        background-position-x:0px;
+    }
+    100%
+    {
+        background-position-x:1000px;
+    }
 }
